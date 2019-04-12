@@ -22,6 +22,7 @@ private:
 	boolean userLayout();
 	void render();
 	void changeKey();
+	bool checkNewKey(string newKey);
 };
 #endif // !LAYOUT1_H
 

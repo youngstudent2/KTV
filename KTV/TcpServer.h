@@ -38,7 +38,6 @@ public:
 	void tcpServerMain();
 	void quit();
 	std::string receive(SOCKET &sockConn);
-
 	void handleClient(SOCKET clientSocket, int index);
 
 

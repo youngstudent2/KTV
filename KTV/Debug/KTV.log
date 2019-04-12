@@ -1,4 +1,5 @@
-﻿  ClientLayout.cpp
-c:\users\hp\source\repos\ktv\ktv\tcpclient.h(4): warning C4005: “_CRT_SECURE_NO_WARNINGS”: 宏重定义
-  c:\users\hp\source\repos\ktv\ktv\clientlayout.cpp: note: 参见“_CRT_SECURE_NO_WARNINGS”的前一个定义
+﻿  TcpServer.cpp
+c:\users\hp\source\repos\ktv\ktv\tcpserver.h(4): warning C4005: “_CRT_SECURE_NO_WARNINGS”: 宏重定义
+  c:\users\hp\source\repos\ktv\ktv\tcpserver.cpp: note: 参见“_CRT_SECURE_NO_WARNINGS”的前一个定义
+c:\users\hp\source\repos\ktv\ktv\tcpserver.cpp(47): warning C4715: “TcpServer::init”: 不是所有的控件路径都返回值
   KTV.vcxproj -> C:\Users\HP\source\repos\KTV\Debug\KTV.exe

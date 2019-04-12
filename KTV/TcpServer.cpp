@@ -66,6 +66,7 @@
 		}
 		bool equal = false;
 		for (auto& addr : addrs) {
+			//std::cerr << inet_ntoa(addr) << '\n' << inet_ntoa(addrClient.sin_addr) << '\n';
 			if (0 == strcmp(inet_ntoa(addr), inet_ntoa(addrClient.sin_addr))) {
 				equal = true;
 				break;

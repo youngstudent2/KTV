@@ -26,7 +26,7 @@
 }
 
  int LoginLayout::chooseFuntion(int choice) {
-	 int try_times;
+	int try_times;
 	switch (choice)
 	{
 	case 0:
@@ -134,8 +134,6 @@
 	 cout << "请输入原密码:";
 	 draw::gotoxy(20, 24);
 	 cout << "请输入新密码:";
-	// draw::gotoxy(30, 26);
-	 //cout << "#回车登录#";
 	 string name, key;
 	 name = InputHandle::getString(10, 40);
 	 draw::gotoxy(15, 35);
@@ -146,9 +144,11 @@
 	 file.close();
 	 if (trueName == name && trueKey == key) {
 		 string newKey = InputHandle::getString(20, 40);
-		 while (newKey.length() < 3) {
+		 while (!checkNewKey(newKey)) {
 			 draw::clearRow(20, 40, 30);
+			 draw::drawTitle(26, 30, "新密码要求包含字母和数字");
 			 newKey = InputHandle::getString(20, 40);
+			 
 		 }
 		 file.open("adminKey.txt", ios::out);
 		 file << name << ' ' << newKey;
@@ -164,4 +164,20 @@
 
 	 }
 	 render();
+ }
+
+ bool LoginLayout::checkNewKey(string newKey)
+ {
+	 if (newKey.length() < 3 || newKey.length() > 12)return false;
+	 bool charCheck = false;
+	 bool numCheck = false;
+	 for (auto& ch : newKey) {
+		 if ((ch >= 'a'&&ch <= 'z') || (ch >= 'A'&&ch <= 'Z')) {
+			 charCheck = true;
+		 }
+		 if (ch >= '0'&&ch <= '9') {
+			 numCheck = true;
+		 }
+	 }
+	 return charCheck && numCheck;
  }

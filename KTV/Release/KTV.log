@@ -1,7 +1,23 @@
-﻿  InputHandle.cpp
+﻿  AdminLayout.cpp
+  ClientLayout.cpp
+  Draw.cpp
+  Info.cpp
+c:\users\hp\source\repos\ktv\ktv\info.cpp(62): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\hp\source\repos\ktv\ktv\info.cpp(75): warning C4018: “<”: 有符号/无符号不匹配
+c:\users\hp\source\repos\ktv\ktv\info.cpp(99): warning C4018: “>”: 有符号/无符号不匹配
+c:\users\hp\source\repos\ktv\ktv\info.cpp(111): warning C4018: “>=”: 有符号/无符号不匹配
+c:\users\hp\source\repos\ktv\ktv\info.cpp(122): warning C4018: “>=”: 有符号/无符号不匹配
+c:\users\hp\source\repos\ktv\ktv\info.cpp(131): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  InputHandle.cpp
+  LoginLayout.cpp
+  TcpClient.cpp
+  TcpServer.cpp
+  main.cpp
   正在生成代码
+c:\users\hp\source\repos\ktv\ktv\tcpserver.cpp(47): warning C4715: “TcpServer::init”: 不是所有的控件路径都返回值
 c:\users\hp\source\repos\ktv\ktv\inputhandle.cpp(38): warning C4715: “InputHandle::getKeyInput”: 不是所有的控件路径都返回值
-  9 of 960 functions ( 0.9%) were compiled, the rest were copied from previous compilation.
+c:\users\hp\source\repos\ktv\ktv\loginlayout.cpp(51): warning C4715: “LoginLayout::chooseFuntion”: 不是所有的控件路径都返回值
+  26 of 960 functions ( 2.7%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
     2 functions had inline decision re-evaluated but remain unchanged
   已完成代码的生成
